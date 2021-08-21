@@ -30,6 +30,7 @@ namespace WinPolar
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MascotaPolar));
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.cambiarPoseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.defaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,19 +41,24 @@ namespace WinPolar
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.label1 = new System.Windows.Forms.Label();
+			this.timerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.reiniciarTimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.contextMenuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// contextMenuStrip1
 			// 
 			this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cambiarPoseToolStripMenuItem,
+            this.timerToolStripMenuItem,
             this.salirToolStripMenuItem});
 			this.contextMenuStrip1.Name = "contextMenuStrip1";
-			this.contextMenuStrip1.Size = new System.Drawing.Size(148, 48);
+			this.contextMenuStrip1.Size = new System.Drawing.Size(148, 70);
 			// 
 			// cambiarPoseToolStripMenuItem
 			// 
@@ -138,12 +144,37 @@ namespace WinPolar
 			this.label1.TabIndex = 4;
 			this.label1.Text = "label1f";
 			// 
+			// timerToolStripMenuItem
+			// 
+			this.timerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reiniciarTimerToolStripMenuItem});
+			this.timerToolStripMenuItem.Name = "timerToolStripMenuItem";
+			this.timerToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+			this.timerToolStripMenuItem.Text = "Timer";
+			// 
+			// reiniciarTimerToolStripMenuItem
+			// 
+			this.reiniciarTimerToolStripMenuItem.Name = "reiniciarTimerToolStripMenuItem";
+			this.reiniciarTimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.reiniciarTimerToolStripMenuItem.Text = "Reiniciar timer";
+			this.reiniciarTimerToolStripMenuItem.Click += new System.EventHandler(this.reiniciarTimerToolStripMenuItem_Click);
+			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+			this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(115, 130);
+			this.pictureBox4.TabIndex = 5;
+			this.pictureBox4.TabStop = false;
+			// 
 			// MascotaPolar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(112, 142);
 			this.ContextMenuStrip = this.contextMenuStrip1;
+			this.Controls.Add(this.pictureBox4);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.pictureBox3);
 			this.Controls.Add(this.pictureBox2);
@@ -156,6 +187,7 @@ namespace WinPolar
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -173,6 +205,9 @@ namespace WinPolar
 		private System.Windows.Forms.ToolStripMenuItem lentesToolStripMenuItem;
 		private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.ToolStripMenuItem timerToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem reiniciarTimerToolStripMenuItem;
+		private System.Windows.Forms.PictureBox pictureBox4;
 	}
 }
 

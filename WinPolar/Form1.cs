@@ -23,6 +23,7 @@ namespace WinPolar
 			InitializeComponent();
 			pictureBox2.Visible = false;
 			pictureBox3.Visible = false;
+			pictureBox4.Visible = false;
 			this.BackColor = Color.LimeGreen;
 			this.TransparencyKey = Color.LimeGreen;
 
@@ -42,6 +43,8 @@ namespace WinPolar
 		{
 			if (contador == valAlt) { pictureBox1.Visible = false; pictureBox2.Visible = true; }//cuando contador = valact, se activa trans. de pic1 y pic2
 			if (contador == (valAlt + segA)) { pictureBox2.Visible = false; pictureBox3.Visible = true; }// se analiza que contador = a la suma del valact + segA
+			if(contador == 20) { pictureBox3.Visible = false; pictureBox4.Visible = true; }
+			if(contador == (20+(segA-2))) { pictureBox4.Visible = false; pictureBox1.Visible = true; }
 		}
 
 
@@ -125,16 +128,19 @@ namespace WinPolar
 		private void lentesToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 
-			pictureBox2.Visible = true; pictureBox3.Visible = false;
+			pictureBox2.Visible = true; pictureBox3.Visible = false; pictureBox4.Visible = false ;
 
 		}
 
 		private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			pictureBox2.Visible = false; pictureBox3.Visible = false; 
+			pictureBox2.Visible = false; pictureBox3.Visible = false; pictureBox4.Visible = false;
 		}
 
-		
+		private void reiniciarTimerToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			contador = 0;
+		}
 	}
 
 }

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinPolar.exe" size="53208">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinPolar.exe" size="66520">
       <assemblyIdentity name="WinPolar" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ywke7udG4LQ4UTWug2XlPOb4RuZejlB7MNUQK0oG748=</dsig:DigestValue>
+        <dsig:DigestValue>GOT7wxl32IO2zyUW8rJmhEme+bLnoZT8P9bGNi8z5HI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
