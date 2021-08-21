@@ -1,0 +1,14 @@
+C:\Users\nik\source\repos\WinPolar\WinPolar\bin\Debug\WinPolar.exe.config
+C:\Users\nik\source\repos\WinPolar\WinPolar\bin\Debug\WinPolar.exe
+C:\Users\nik\source\repos\WinPolar\WinPolar\bin\Debug\WinPolar.pdb
+C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.Properties.Resources.resources
+C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.csproj.GenerateResource.cache
+C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.csproj.CoreCompileInputs.cache
+C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.exe
+C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.pdb
+C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.MascotaPolar.resources
+C:\Users\nik\source\repos\WinPolar\WinPolar\bin\Debug\WinPolar.exe.manifest
+C:\Users\nik\source\repos\WinPolar\WinPolar\bin\Debug\WinPolar.application
+C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.exe.manifest
+C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.application
+C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.csprojAssemblyReference.cache
