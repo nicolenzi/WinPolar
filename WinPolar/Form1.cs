@@ -15,7 +15,8 @@ namespace WinPolar
 	{
 
 		int contador = 0;//contador de segundos
-		int valAlt;//valor aleatorio de animacion
+		int valAle;//valor aleatorio de animacion
+		int valAle2;
 		Random r = new Random();//inicializacion de nuemro aleatorio
 		int segA; //segundos adicionales que se nesecitan para que la transicion concluya correctamente
 		public MascotaPolar()
@@ -28,7 +29,8 @@ namespace WinPolar
 			this.TransparencyKey = Color.LimeGreen;
 
 			timer1.Enabled = true;
-			valAlt = r.Next(3, 7);
+			valAle = r.Next(8, 14); //primera animacion
+			valAle2 = r.Next(25, 35);
 			segA = 3;	
 			
 		}
@@ -41,10 +43,11 @@ namespace WinPolar
 		}
 		private void Analizador()
 		{
-			if (contador == valAlt) { pictureBox1.Visible = false; pictureBox2.Visible = true; }//cuando contador = valact, se activa trans. de pic1 y pic2
-			if (contador == (valAlt + segA)) { pictureBox2.Visible = false; pictureBox3.Visible = true; }// se analiza que contador = a la suma del valact + segA
-			if(contador == 20) { pictureBox3.Visible = false; pictureBox4.Visible = true; }
-			if(contador == (20+(segA-2))) { pictureBox4.Visible = false; pictureBox1.Visible = true; }
+			if(contador == valAle) { pictureBox1.Visible = false; pictureBox2.Visible = true; }//cuando contador = valale, se activa trans. de pic1 y pic2
+			if(contador == (valAle + segA)) { pictureBox2.Visible = false; pictureBox3.Visible = true;}
+			
+			if (contador == valAle2) { pictureBox3.Visible = false; pictureBox4.Visible = true; }// incorporacion de valAle2
+			if(contador == (valAle2 + (segA-2))) { pictureBox4.Visible = false; pictureBox1.Visible = true; }//se le resta dos segundos a segA porque no concide la animacion
 		}
 
 
