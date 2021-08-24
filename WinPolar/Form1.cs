@@ -19,6 +19,9 @@ namespace WinPolar
 		int valAle2;
 		Random r = new Random();//inicializacion de nuemro aleatorio
 		int segA; //segundos adicionales que se nesecitan para que la transicion concluya correctamente
+
+
+		
 		public MascotaPolar()
 		{
 			InitializeComponent();
@@ -31,7 +34,9 @@ namespace WinPolar
 			timer1.Enabled = true;
 			valAle = r.Next(8, 14); //primera animacion
 			valAle2 = r.Next(25, 35);
-			segA = 3;	
+			segA = 3;
+
+			
 			
 		}
 		private void timer1_Tick(object sender, EventArgs e)// tick del timer(contador)

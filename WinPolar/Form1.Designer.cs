@@ -7,6 +7,7 @@ namespace WinPolar
 		/// Variable del diseñador necesaria.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
+		
 
 		/// <summary>
 		/// Limpiar los recursos que se estén usando.
@@ -35,14 +36,14 @@ namespace WinPolar
 			this.cambiarPoseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.defaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.lentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.timerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.reiniciarTimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.label1 = new System.Windows.Forms.Label();
-			this.timerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.reiniciarTimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.contextMenuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -83,6 +84,21 @@ namespace WinPolar
 			this.lentesToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
 			this.lentesToolStripMenuItem.Text = "Lentes";
 			this.lentesToolStripMenuItem.Click += new System.EventHandler(this.lentesToolStripMenuItem_Click);
+			// 
+			// timerToolStripMenuItem
+			// 
+			this.timerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reiniciarTimerToolStripMenuItem});
+			this.timerToolStripMenuItem.Name = "timerToolStripMenuItem";
+			this.timerToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+			this.timerToolStripMenuItem.Text = "Timer";
+			// 
+			// reiniciarTimerToolStripMenuItem
+			// 
+			this.reiniciarTimerToolStripMenuItem.Name = "reiniciarTimerToolStripMenuItem";
+			this.reiniciarTimerToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+			this.reiniciarTimerToolStripMenuItem.Text = "Reiniciar";
+			this.reiniciarTimerToolStripMenuItem.Click += new System.EventHandler(this.reiniciarTimerToolStripMenuItem_Click);
 			// 
 			// salirToolStripMenuItem
 			// 
@@ -144,21 +160,6 @@ namespace WinPolar
 			this.label1.TabIndex = 4;
 			this.label1.Text = "label1f";
 			// 
-			// timerToolStripMenuItem
-			// 
-			this.timerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reiniciarTimerToolStripMenuItem});
-			this.timerToolStripMenuItem.Name = "timerToolStripMenuItem";
-			this.timerToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-			this.timerToolStripMenuItem.Text = "Timer";
-			// 
-			// reiniciarTimerToolStripMenuItem
-			// 
-			this.reiniciarTimerToolStripMenuItem.Name = "reiniciarTimerToolStripMenuItem";
-			this.reiniciarTimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.reiniciarTimerToolStripMenuItem.Text = "Reiniciar timer";
-			this.reiniciarTimerToolStripMenuItem.Click += new System.EventHandler(this.reiniciarTimerToolStripMenuItem_Click);
-			// 
 			// pictureBox4
 			// 
 			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
@@ -180,8 +181,9 @@ namespace WinPolar
 			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.pictureBox1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Location = new System.Drawing.Point(1250, 615);
 			this.Name = "MascotaPolar";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 			this.Text = "Polar";
 			this.contextMenuStrip1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
