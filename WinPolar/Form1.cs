@@ -58,86 +58,52 @@ namespace WinPolar
 
 
 		private bool val;
-		void Mover()
-		{
-			this.Location = Cursor.Position;
+		void Mover()// metodo para mover imagenes
+		{ //la posicion actual va a ser igual a la posicion del mouse mas el acomodo 
+			this.Location = Cursor.Position + new Size(-60,-60);
 		}
 
 		//PictureBox1(Default Idle)
-		private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
-		{
-			val = false;
-		}
-
-		private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
-		{
-
-			val = true;
-		}
-
-		private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
-		{
-			if (val == true)
-			{
-				Mover();
-			}
-
-		}
+		private void pictureBox1_MouseUp(object sender, MouseEventArgs e)// al levantar el mouse
+		{val = false;}
+		private void pictureBox1_MouseDown(object sender, MouseEventArgs e)// al mantener pulsado mouse(click izq)
+		{val = true;}
+		private void pictureBox1_MouseMove(object sender, MouseEventArgs e)// al mover el mouse
+		{ if (val == true) { Mover(); } }
 
 		//PictureBox2(Ponerse Lentes)
-
-		private void pictureBox2_MouseUp(object sender, MouseEventArgs e) // de picture 
-		{
-			val = false;
-		}
-
-		private void pictureBox2_MouseDown(object sender, MouseEventArgs e) //?
-		{
-			val = true;
-		}
-
-		private void pictureBox2_MouseMove(object sender, MouseEventArgs e) //?
-		{
-			if (val == true)
-			{
-				Mover();
-			}
-		}
-
+		private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
+		{val = false;}
+        private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
+		{val = true;}
+		private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
+		{ if (val == true) {Mover();} }
 
 		//PictureBox3(lentes idle)
+		private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
+		{val = false;}
+		private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
+		{val = true;}
+		private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+		{if (val == true){Mover();}}
 
-		private void pictureBox3_MouseUp(object sender, MouseEventArgs e)//mover imagen mouseup
-		{
-			val = false;
-		}
+		//pictureBox4(sacarse lentes)
+		private void pictureBox4_MouseUp(object sender, MouseEventArgs e)
+		{ val = false; }
+		private void pictureBox4_MouseDown(object sender, MouseEventArgs e)
+		{ val = true; }
+		private void pictureBox4_MouseMove(object sender, MouseEventArgs e)
+		{ if (val == true) { Mover(); } }
 
-		private void pictureBox3_MouseDown(object sender, MouseEventArgs e)// mover imagen mousedown
-		{
-			val = true;
-		}
-
-		private void pictureBox3_MouseMove(object sender, MouseEventArgs e)//mover imagen mouse move
-		{
-			if (val == true)
-			{
-				Mover();
-			}
-		}
 
 		private void salirToolStripMenuItem_Click(object sender, EventArgs e)// menu contextual de salir
 		{
 			this.Close();
-
 		}
 
-		private void cambiarPoseToolStripMenuItem_Click(object sender, EventArgs e)//menu contextual cambiar pose
-		{}
 		private void lentesToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-
 			pictureBox2.Visible = true; pictureBox3.Visible = false; pictureBox4.Visible = false ;
-
 		}
 
 		private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
@@ -149,6 +115,8 @@ namespace WinPolar
 		{
 			contador = 0;
 		}
+
+		
 	}
 
 }

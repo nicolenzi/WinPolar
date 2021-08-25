@@ -69,19 +69,18 @@ namespace WinPolar
 			this.cambiarPoseToolStripMenuItem.Name = "cambiarPoseToolStripMenuItem";
 			this.cambiarPoseToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
 			this.cambiarPoseToolStripMenuItem.Text = "Cambiar pose";
-			this.cambiarPoseToolStripMenuItem.Click += new System.EventHandler(this.cambiarPoseToolStripMenuItem_Click);
 			// 
 			// defaultToolStripMenuItem
 			// 
 			this.defaultToolStripMenuItem.Name = "defaultToolStripMenuItem";
-			this.defaultToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+			this.defaultToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.defaultToolStripMenuItem.Text = "Default";
 			this.defaultToolStripMenuItem.Click += new System.EventHandler(this.defaultToolStripMenuItem_Click);
 			// 
 			// lentesToolStripMenuItem
 			// 
 			this.lentesToolStripMenuItem.Name = "lentesToolStripMenuItem";
-			this.lentesToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+			this.lentesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.lentesToolStripMenuItem.Text = "Lentes";
 			this.lentesToolStripMenuItem.Click += new System.EventHandler(this.lentesToolStripMenuItem_Click);
 			// 
@@ -168,6 +167,9 @@ namespace WinPolar
 			this.pictureBox4.Size = new System.Drawing.Size(115, 130);
 			this.pictureBox4.TabIndex = 5;
 			this.pictureBox4.TabStop = false;
+			this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseDown);
+			this.pictureBox4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseMove);
+			this.pictureBox4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseUp);
 			// 
 			// MascotaPolar
 			// 
