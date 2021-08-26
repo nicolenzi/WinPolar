@@ -25,9 +25,7 @@ namespace WinPolar
 		public MascotaPolar()
 		{
 			InitializeComponent();
-			pictureBox2.Visible = false;
-			pictureBox3.Visible = false;
-			pictureBox4.Visible = false;
+			Animacion1();
 			this.BackColor = Color.LimeGreen;
 			this.TransparencyKey = Color.LimeGreen;
 
@@ -39,7 +37,7 @@ namespace WinPolar
 			
 			
 		}
-		private void timer1_Tick(object sender, EventArgs e)// tick del timer(contador)
+		private void timer1_Tick(object sender, EventArgs e)// Timer(contador)
 		{
 			contador++;
 			label1.Text = contador.ToString();
@@ -48,11 +46,12 @@ namespace WinPolar
 		}
 		private void Analizador()
 		{
-			if(contador == valAle) { pictureBox1.Visible = false; pictureBox2.Visible = true; }//cuando contador = valale, se activa trans. de pic1 y pic2
-			if(contador == (valAle + segA)) { pictureBox2.Visible = false; pictureBox3.Visible = true;}
+			if(contador == valAle) { Animacion2(); }//cuando contador = valale, se activa trans. de pic1 y pic2
+			if(contador == (valAle + segA)) { Animacion3(); }
 			
-			if (contador == valAle2) { pictureBox3.Visible = false; pictureBox4.Visible = true; }// incorporacion de valAle2
-			if(contador == (valAle2 + (segA-2))) { pictureBox4.Visible = false; pictureBox1.Visible = true; }//se le resta dos segundos a segA porque no concide la animacion
+			if (contador == valAle2) { Animacion4(); }// incorporacion de valAle2
+			if(contador == (valAle2 + (segA-2))) { Animacion1(); }//se le resta dos segundos a segA porque no concide la animacion
+			if (contador == 60) {contador = 1;}
 		}
 
 
@@ -103,20 +102,43 @@ namespace WinPolar
 
 		private void lentesToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			pictureBox2.Visible = true; pictureBox3.Visible = false; pictureBox4.Visible = false ;
+			contador = 0;
+			if(contador == 0) { Animacion3();timer1.Enabled = false; }
+			
+			
 		}
 
 		private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			pictureBox2.Visible = false; pictureBox3.Visible = false; pictureBox4.Visible = false;
+			contador = 0;
+			if(contador == 0) { Animacion1();timer1.Enabled = false; }
 		}
 
 		private void reiniciarTimerToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			contador = 0;
+			Animacion1();
+			timer1.Enabled = true;
+			
+		}
+		public void Animacion1() //p1=t,p2=f,p3=f,p4=f;
+		{pictureBox1.Visible= true;pictureBox2.Visible= false;pictureBox3.Visible= false;pictureBox4.Visible= false;}
+		public void Animacion2() //p1=f,p2=t,p3=f,p4=f;
+		{pictureBox1.Visible= false;pictureBox2.Visible= true;pictureBox3.Visible= false;pictureBox4.Visible= false;}
+		public void Animacion3() //p1=f,p2=f,p3=t,p4=f;
+		{pictureBox1.Visible= false;pictureBox2.Visible= false;pictureBox3.Visible= true;pictureBox4.Visible= false;}
+		public void Animacion4() //p1=f,p2=f,p3=f,p4=t;
+		{pictureBox1.Visible= false;pictureBox2.Visible= false;pictureBox3.Visible= false;pictureBox4.Visible= true;}
+
+		private void verOcultarTimerToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			label1.Visible = true;
 		}
 
-		
+		private void oultarTimerToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			label1.Visible = false;
+		}
 	}
 
 }

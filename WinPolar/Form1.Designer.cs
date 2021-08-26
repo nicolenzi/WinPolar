@@ -38,6 +38,7 @@ namespace WinPolar
 			this.lentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.timerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.reiniciarTimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.verOcultarTimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -45,6 +46,7 @@ namespace WinPolar
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.label1 = new System.Windows.Forms.Label();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
+			this.oultarTimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.contextMenuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -73,21 +75,23 @@ namespace WinPolar
 			// defaultToolStripMenuItem
 			// 
 			this.defaultToolStripMenuItem.Name = "defaultToolStripMenuItem";
-			this.defaultToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.defaultToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
 			this.defaultToolStripMenuItem.Text = "Default";
 			this.defaultToolStripMenuItem.Click += new System.EventHandler(this.defaultToolStripMenuItem_Click);
 			// 
 			// lentesToolStripMenuItem
 			// 
 			this.lentesToolStripMenuItem.Name = "lentesToolStripMenuItem";
-			this.lentesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.lentesToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
 			this.lentesToolStripMenuItem.Text = "Lentes";
 			this.lentesToolStripMenuItem.Click += new System.EventHandler(this.lentesToolStripMenuItem_Click);
 			// 
 			// timerToolStripMenuItem
 			// 
 			this.timerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reiniciarTimerToolStripMenuItem});
+            this.reiniciarTimerToolStripMenuItem,
+            this.verOcultarTimerToolStripMenuItem,
+            this.oultarTimerToolStripMenuItem});
 			this.timerToolStripMenuItem.Name = "timerToolStripMenuItem";
 			this.timerToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
 			this.timerToolStripMenuItem.Text = "Timer";
@@ -95,9 +99,16 @@ namespace WinPolar
 			// reiniciarTimerToolStripMenuItem
 			// 
 			this.reiniciarTimerToolStripMenuItem.Name = "reiniciarTimerToolStripMenuItem";
-			this.reiniciarTimerToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+			this.reiniciarTimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.reiniciarTimerToolStripMenuItem.Text = "Reiniciar";
 			this.reiniciarTimerToolStripMenuItem.Click += new System.EventHandler(this.reiniciarTimerToolStripMenuItem_Click);
+			// 
+			// verOcultarTimerToolStripMenuItem
+			// 
+			this.verOcultarTimerToolStripMenuItem.Name = "verOcultarTimerToolStripMenuItem";
+			this.verOcultarTimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.verOcultarTimerToolStripMenuItem.Text = "Ver timer";
+			this.verOcultarTimerToolStripMenuItem.Click += new System.EventHandler(this.verOcultarTimerToolStripMenuItem_Click);
 			// 
 			// salirToolStripMenuItem
 			// 
@@ -171,6 +182,13 @@ namespace WinPolar
 			this.pictureBox4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseMove);
 			this.pictureBox4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseUp);
 			// 
+			// oultarTimerToolStripMenuItem
+			// 
+			this.oultarTimerToolStripMenuItem.Name = "oultarTimerToolStripMenuItem";
+			this.oultarTimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.oultarTimerToolStripMenuItem.Text = "Oultar timer";
+			this.oultarTimerToolStripMenuItem.Click += new System.EventHandler(this.oultarTimerToolStripMenuItem_Click);
+			// 
 			// MascotaPolar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +230,8 @@ namespace WinPolar
 		private System.Windows.Forms.ToolStripMenuItem timerToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem reiniciarTimerToolStripMenuItem;
 		private System.Windows.Forms.PictureBox pictureBox4;
+		private System.Windows.Forms.ToolStripMenuItem verOcultarTimerToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem oultarTimerToolStripMenuItem;
 	}
 }
 
