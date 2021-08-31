@@ -14,7 +14,7 @@ namespace WinPolar
 	public partial class MascotaPolar : Form
 	{
 
-		int contador = 0;//contador de segundos
+		float contador = 0;//contador de segundos
 		int valAle;//valor aleatorio de animacion
 		int valAle2;
 		Random r = new Random();//inicializacion de nuemro aleatorio
@@ -30,9 +30,9 @@ namespace WinPolar
 			this.TransparencyKey = Color.LimeGreen;
 
 			timer1.Enabled = true;
-			valAle = r.Next(8, 14); //primera animacion
-			valAle2 = r.Next(25, 35);
-			segA = 3;
+			valAle = r.Next(80, 140); //primera animacion
+			valAle2 = r.Next(250, 350);
+			segA = 28;
 
 			
 			
@@ -50,8 +50,8 @@ namespace WinPolar
 			if(contador == (valAle + segA)) { Animacion3(); }
 			
 			if (contador == valAle2) { Animacion4(); }// incorporacion de valAle2
-			if(contador == (valAle2 + (segA-2))) { Animacion1(); }//se le resta dos segundos a segA porque no concide la animacion
-			if (contador == 60) {contador = 1;}
+			if(contador == (valAle2 + (16))) { Animacion1(); }//se le resta dos segundos a segA porque no concide la animacion
+			
 		}
 
 
@@ -103,7 +103,7 @@ namespace WinPolar
 		private void lentesToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			contador = 0;
-			if(contador == 0) { Animacion3();timer1.Enabled = false; }
+			if(contador == 0) { Animacion3();timer1.Enabled = false; }                               
 			
 			
 		}

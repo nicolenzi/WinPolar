@@ -39,6 +39,7 @@ namespace WinPolar
 			this.timerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.reiniciarTimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.verOcultarTimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.oultarTimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -46,7 +47,6 @@ namespace WinPolar
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.label1 = new System.Windows.Forms.Label();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
-			this.oultarTimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.contextMenuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -99,16 +99,23 @@ namespace WinPolar
 			// reiniciarTimerToolStripMenuItem
 			// 
 			this.reiniciarTimerToolStripMenuItem.Name = "reiniciarTimerToolStripMenuItem";
-			this.reiniciarTimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.reiniciarTimerToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.reiniciarTimerToolStripMenuItem.Text = "Reiniciar";
 			this.reiniciarTimerToolStripMenuItem.Click += new System.EventHandler(this.reiniciarTimerToolStripMenuItem_Click);
 			// 
 			// verOcultarTimerToolStripMenuItem
 			// 
 			this.verOcultarTimerToolStripMenuItem.Name = "verOcultarTimerToolStripMenuItem";
-			this.verOcultarTimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.verOcultarTimerToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.verOcultarTimerToolStripMenuItem.Text = "Ver timer";
 			this.verOcultarTimerToolStripMenuItem.Click += new System.EventHandler(this.verOcultarTimerToolStripMenuItem_Click);
+			// 
+			// oultarTimerToolStripMenuItem
+			// 
+			this.oultarTimerToolStripMenuItem.Name = "oultarTimerToolStripMenuItem";
+			this.oultarTimerToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+			this.oultarTimerToolStripMenuItem.Text = "Oultar timer";
+			this.oultarTimerToolStripMenuItem.Click += new System.EventHandler(this.oultarTimerToolStripMenuItem_Click);
 			// 
 			// salirToolStripMenuItem
 			// 
@@ -158,7 +165,6 @@ namespace WinPolar
 			// timer1
 			// 
 			this.timer1.Enabled = true;
-			this.timer1.Interval = 1000;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
 			// label1
@@ -181,13 +187,6 @@ namespace WinPolar
 			this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseDown);
 			this.pictureBox4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseMove);
 			this.pictureBox4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseUp);
-			// 
-			// oultarTimerToolStripMenuItem
-			// 
-			this.oultarTimerToolStripMenuItem.Name = "oultarTimerToolStripMenuItem";
-			this.oultarTimerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.oultarTimerToolStripMenuItem.Text = "Oultar timer";
-			this.oultarTimerToolStripMenuItem.Click += new System.EventHandler(this.oultarTimerToolStripMenuItem_Click);
 			// 
 			// MascotaPolar
 			// 
