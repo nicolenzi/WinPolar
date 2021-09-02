@@ -12,3 +12,4 @@ C:\Users\nik\source\repos\WinPolar\WinPolar\bin\Debug\WinPolar.application
 C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.exe.manifest
 C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.application
 C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.csprojAssemblyReference.cache
+C:\Users\nik\source\repos\WinPolar\WinPolar\obj\Debug\WinPolar.ControlForm2.resources

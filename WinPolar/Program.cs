@@ -16,7 +16,10 @@ namespace WinPolar
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
+			Application.Run(new ControlForm2());
 			Application.Run(new MascotaPolar());
+
+			
 		}
 	}
 }
