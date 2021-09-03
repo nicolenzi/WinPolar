@@ -145,5 +145,17 @@
   <ItemGroup>
     <None Include="Resources\PolarLentesIdle.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuPolar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuPolar512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuPolar256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuPolar2561.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
