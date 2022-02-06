@@ -70,5 +70,10 @@ namespace WinPolar
 		{
 
 		}
-	}
+
+        private void checkBox6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
